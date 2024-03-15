@@ -17,3 +17,11 @@ Here's how Kubernetes works in a non-technical analogy:
 6. **Consistent Environment:** Whether your bakery is in the city or the countryside (different environments), Kubernetes ensures that your recipes are followed the same way everywhere, maintaining the quality of your pastries.
 
 In essence, Kubernetes helps you manage your bakery operations efficiently, adapting to changes in demand, ensuring the quality of your pastries, and handling unexpected situations seamlessly. It allows you to focus on creating delicious pastries (applications) without worrying about the complexities of managing a large team of chefs (containers).
+
+## Architecture
+- Master Node:
+
+API Server: The API server is the central management point for the Kubernetes cluster. It exposes the Kubernetes API, which allows users and external systems to interact with the cluster.
+Scheduler: The scheduler is responsible for placing pods (groups of one or more containers) onto nodes in the cluster. It considers factors such as resource requirements, node capacity, and other constraints when making scheduling decisions.
+Controller Manager: The controller manager includes several controllers that handle cluster-wide tasks such as node management, replication control, endpoint management, and more. Each controller watches the cluster's state through the API server and takes action to maintain the desired state.
+etcd: etcd is a distributed key-value store used by Kubernetes to store cluster configuration data, state, and metadata. It provides consistent and reliable storage for the cluster's state.
