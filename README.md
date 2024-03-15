@@ -31,3 +31,11 @@ etcd: etcd is a distributed key-value store used by Kubernetes to store cluster 
 Kubelet: The kubelet is an agent that runs on each worker node and is responsible for managing the containers on that node. It interacts with the API server to receive instructions (such as pod specifications) and ensures that the containers are running as expected.
 Kube Proxy: The kube-proxy is a network proxy that runs on each worker node and is responsible for implementing Kubernetes services, which provide network connectivity to pods and enable load balancing across them.
 Container Runtime: The container runtime (e.g., Docker, containerd, or CRI-O) is responsible for pulling container images from a registry, creating containers, and managing their lifecycle on the node.
+
+
+- Networking:
+
+Kubernetes networking enables communication between pods across the cluster. Various networking plugins (e.g., Calico, Flannel, Cilium) can be used to implement different networking models, such as overlay networks or direct routing.
+
+-Add-ons:
+Kubernetes supports various add-ons and extensions to enhance its functionality, such as DNS for service discovery, Dashboard for web-based cluster management, Ingress controllers for HTTP load balancing, and monitoring/logging solutions for cluster observability.
