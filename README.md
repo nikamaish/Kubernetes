@@ -25,3 +25,9 @@ API Server: The API server is the central management point for the Kubernetes cl
 Scheduler: The scheduler is responsible for placing pods (groups of one or more containers) onto nodes in the cluster. It considers factors such as resource requirements, node capacity, and other constraints when making scheduling decisions.
 Controller Manager: The controller manager includes several controllers that handle cluster-wide tasks such as node management, replication control, endpoint management, and more. Each controller watches the cluster's state through the API server and takes action to maintain the desired state.
 etcd: etcd is a distributed key-value store used by Kubernetes to store cluster configuration data, state, and metadata. It provides consistent and reliable storage for the cluster's state.
+
+- Worker Node:
+
+Kubelet: The kubelet is an agent that runs on each worker node and is responsible for managing the containers on that node. It interacts with the API server to receive instructions (such as pod specifications) and ensures that the containers are running as expected.
+Kube Proxy: The kube-proxy is a network proxy that runs on each worker node and is responsible for implementing Kubernetes services, which provide network connectivity to pods and enable load balancing across them.
+Container Runtime: The container runtime (e.g., Docker, containerd, or CRI-O) is responsible for pulling container images from a registry, creating containers, and managing their lifecycle on the node.
