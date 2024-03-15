@@ -39,3 +39,6 @@ Kubernetes networking enables communication between pods across the cluster. Var
 
 -Add-ons:
 Kubernetes supports various add-ons and extensions to enhance its functionality, such as DNS for service discovery, Dashboard for web-based cluster management, Ingress controllers for HTTP load balancing, and monitoring/logging solutions for cluster observability.
+
+## kubectl
+kubectl is a command-line tool used to interact with Kubernetes clusters. It allows users to perform various operations such as deploying applications, managing resources, inspecting cluster state, and troubleshooting issues. kubectl is an essential component of the Kubernetes ecosystem, providing a convenient interface for administrators, developers, and operators to interact with Kubernetes clusters.
